@@ -70,7 +70,7 @@ while True:
     # Get next key pressed      
     ch = getch()
 
-    if (ch == 'q') :        # Quit
+    if (ch == 'p' or ch == 'P') :        # Quit
         break
     elif (ch == '+') :      # Change speed
         speed += 10
