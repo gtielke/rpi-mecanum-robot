@@ -23,6 +23,7 @@ Create directory and copy the files using:
     
 Run using
     /opt/robot/mecanum.py
+
 Use the keypad to set the direction.
 
 ## Using AntiMicroX / QJoyPad
@@ -36,6 +37,7 @@ Install using
 The following files are included:
 * mecanum.gamecontroller.amgp - AntiMicroX
 * mecanum-gamepad.lyt - QJoyPad
+
 Download the file to the /opt/mecanum folder.
 From within AntiMicroX, load the file, make any desired changes, and save it. That file will then automatically be loaded when AntiMicroX starts.
 
@@ -43,6 +45,7 @@ There appears to be a conflict, possibly with VNC. If the gamepad is not detecte
 
 ## Starting automatically
 The programs can be started by adding the following entry to /etc/xdg/lxsession/LXDE-pi/autostart (edit using sudo)
+
     lxterminal -e /opt/mecanum/robot.sh
 
 
