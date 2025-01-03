@@ -9,11 +9,14 @@ The new Bookworm version of Raspberry Pi OS is NOT compatible with this install.
 ## Install and run
 Download the file mecanum.py. It is recommended that this is installed in /opt/mecanum
 Create directory and copy the files using:
+
     sudo mkdir /opt/mecanum
+    
     sudo chown $USER: /opt/mecanum
     
     cp mecanum.py /opt/mecanum/ 
     cp robot.sh /opt/mecanum/
+    
     cd /opt/mecanum
     chmod u+x mecanum.py
     chmod u+x robot.sh
