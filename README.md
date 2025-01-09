@@ -48,6 +48,8 @@ The programs can be started by adding the following entry to /etc/xdg/lxsession/
 
     lxterminal -e /opt/mecanum/robot.sh
 
+## Additional notes
+I noticed the battery pack drains quickly, causing the Raspberry Pi to shut down. My solution is to remove the diode and instead supply the Pi, via its normal power input, with its own 5-volt battery pack. Then the 6-volt battery pack can be dedicated to the motor driver boards.  The two power supplies should have a common ground connection.
 
 ## Pygame Zero version
 There is also a version designed for Pygame Zero. This includes a distance sensor and stops forward motion if a crash is imminent. The interface allows for mouse clicks on the direction arrows or the same keyboard control as the command line version. This also needs pigpiod to be running. To run use
